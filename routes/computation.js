@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
   const x = req.query.x ? parseFloat(req.query.x) : Math.random(); // Use random if no query provided
 
   const results = {
-    acosh: x >= 1 ? mathFunctions.acosh(x) : 'undefined (x must be greater than 1)',
+    acosh: x >= 1 ? mathFunctions.acosh(x) : 'undefined (value must be greater than 1)',
     log1p: mathFunctions.log1p(x),
     tan: mathFunctions.tan(x),
     sqrt: mathFunctions.sqrt(x),
