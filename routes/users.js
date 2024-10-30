@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
   value += 2;
   // Add value to total
   total += value;
-  // res.send('respond with a resource');
   res.send(`Total is: ${total}`);
 });
 
